@@ -4,7 +4,8 @@
  * For example, 6, 8 are ugly while 14 is not ugly since it includes another prime factor 7.
  * Note that 1 is typically treated as an ugly number.
  */
-
+ 
+/* 自我评价：C */
 public class Solution {
 	/* 思路三：尝试添加多判定条件来节省runtime */
     public boolean isUgly(int num) {
@@ -18,7 +19,7 @@ public class Solution {
         return num == 1;
     }
     /* Runtime:248ms */
-    /* 是否有更好的思路 */
+    /* 是否有更好的思路,该方法Runtime跨度太长,说明算法不够优异,有待提高 */
 }
  
 /*------------------------------------
