@@ -7,7 +7,7 @@
  
 /* 自我评价：C */
 public class Solution {
-	/* 思路三：尝试添加多判定条件来节省runtime */
+    /* 思路三：尝试添加多判定条件来节省runtime */
     public boolean isUgly(int num) {
         if (num <= 0) { return false; }        
         while (num % 15 == 0) { num /= 15; }
@@ -24,7 +24,7 @@ public class Solution {
  
 /*------------------------------------
 public class Solution {
-	/* 思路二：positive numbers!!! 因此0和负数需要排除，否则0会超时 */
+    /* 思路二：positive numbers!!! 因此0和负数需要排除，否则0会超时 */
     public boolean isUgly(int num) {
     	if (num <= 0) {	return false; }
         while (num % 2 == 0) { num /= 2; }
