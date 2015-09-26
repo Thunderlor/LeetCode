@@ -6,7 +6,7 @@
  */
 
 public class Solution {
-	/** 思路三：尝试添加多判定条件来节省runtime */
+	/* 思路三：尝试添加多判定条件来节省runtime */
     public boolean isUgly(int num) {
         if (num <= 0) { return false; }        
         while (num % 15 == 0) { num /= 15; }
@@ -17,12 +17,13 @@ public class Solution {
         while (num % 2 == 0) { num /= 2; }
         return num == 1;
     }
-    /** Runtime:248ms */
+    /* Runtime:248ms */
+    /* 是否有更好的思路 */
 }
  
 /*------------------------------------
 public class Solution {
-	/** 思路二：positive numbers!!! 因此0和负数需要排除，否则0会超时 */
+	/* 思路二：positive numbers!!! 因此0和负数需要排除，否则0会超时 */
     public boolean isUgly(int num) {
     	if (num <= 0) {	return false; }
         while (num % 2 == 0) { num /= 2; }
@@ -30,19 +31,19 @@ public class Solution {
         while (num % 5 == 0) { num /= 5; }
         return num == 1 ? true : false;
     }
-    /** Runtime:偏长 */
+    /* Runtime:偏长 */
 }
 */
  
 /*------------------------------------
 public class Solution {
-	/** 思路一：将num分别对2, 3, 5取余, 当不存在余数时, 除尽该被除数 */
+	/* 思路一：将num分别对2, 3, 5取余, 当不存在余数时, 除尽该被除数 */
     public boolean isUgly(int num) {
         while (num % 2 == 0) { num /= 2; }
         while (num % 3 == 0) { num /= 3; }
         while (num % 5 == 0) { num /= 5; }
         return num == 1 ? true : false;
     }
-    /** 该方法超时！ */
+    /* 该方法超时！ */
 }
 */
