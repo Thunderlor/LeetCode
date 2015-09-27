@@ -9,21 +9,21 @@
  
 //-----------------------------------------
 public class Solution {
-	/* 思路一：迭代求取目标数所含最大的Pefect Square Number */
+    /* 思路一：迭代求取目标数所含最大的Pefect Square Number */
     public int numSquares(int n) {
-    	int temp = (int) Math.sqrt(n);
-    	int result = n - temp * temp;
-    	if (result == 0) {
-    		return 1;
-    	} else if (isSquareNum(result)) {
-    		return 2;
-    	} else {
-    		return numSquares(result) + 1;
-    	}
+        int temp = (int) Math.sqrt(n);
+        int result = n - temp * temp;
+        if (result == 0) {
+            return 1;
+        } else if (isSquareNum(result)) {
+            return 2;
+        } else {
+            return numSquares(result) + 1;
+        }
     }
     private boolean isSquareNum(int n) {
-    	int temp = (int) Math.sqrt(n);
-    	return (temp * temp == n) ? true : false;
+        int temp = (int) Math.sqrt(n);
+        return (temp * temp == n) ? true : false;
     }
     /* 错误：并不是the least number！*/
 }
