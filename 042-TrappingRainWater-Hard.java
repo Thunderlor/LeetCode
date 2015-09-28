@@ -23,10 +23,10 @@ public class Solution {
 				int maxIndex = 0;
 				for (int i = index + 1; i < height.length; i++) {
 					if (height[i] >= height[index]){
-                        max = height[index];
-                        maxIndex = i;
-                        break;
-                    } else {
+						max = height[index];
+						maxIndex = i;
+						break;
+					} else {
 						if (height[i] > max) {
 							max = height[i];
 							maxIndex = i;
@@ -34,12 +34,12 @@ public class Solution {
 							maxIndex = i;
 							max = 0;
 						}
-                    }
-                }
-                result = result + height[index] + max * (maxIndex - index - 1);
-                index = maxIndex;
-            }                
-        }
-        return result + height[height.length - 1] - sum;
-    }
+					}
+				}
+				result = result + height[index] + max * (maxIndex - index - 1);
+				index = maxIndex;
+			}                
+		}
+		return result + height[height.length - 1] - sum;
+	}
 }
