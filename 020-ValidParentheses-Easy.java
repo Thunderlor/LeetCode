@@ -5,7 +5,13 @@
  * "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
  */
  
- 
+public class Solution {
+	public boolean isValid(String s) {
+		int len = s.length();
+		if (len % 2 == 1) return false;
+		
+	}
+} 
 
 public class Solution {
 	/* 思路一： 一开始我理解错题目的意思，我认为"([])"并不是正确的答案
