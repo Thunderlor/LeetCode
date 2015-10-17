@@ -22,7 +22,7 @@ public class Solution {
     /* 是否有更好的思路,该方法Runtime跨度太长,说明算法不够优异,有待提高 */
 }
  
-/*------------------------------------
+//------------------------------------
 public class Solution {
     /* 思路二：positive numbers!!! 因此0和负数需要排除，否则0会超时 */
     public boolean isUgly(int num) {
@@ -34,9 +34,8 @@ public class Solution {
     }
     /* Runtime:偏长 */
 }
-*/
  
-/*------------------------------------
+//------------------------------------
 public class Solution {
 	/* 思路一：将num分别对2, 3, 5取余, 当不存在余数时, 除尽该被除数 */
     public boolean isUgly(int num) {
@@ -47,4 +46,3 @@ public class Solution {
     }
     /* 该方法超时！ */
 }
-*/
